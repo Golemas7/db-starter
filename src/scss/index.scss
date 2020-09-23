@@ -1,0 +1,16 @@
+@import 'site-styles';
+
+body {
+  font-family: $font-family-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+
+  &::before {
+    content: $font-family-base;
+  }
+}
+
+code {
+  font-family: $font-family-code;
+}

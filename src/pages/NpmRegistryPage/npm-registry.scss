@@ -1,0 +1,24 @@
+@mixin box {
+  border: 1px solid;
+  padding: 20px;
+}
+
+.npm-registry {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 20px;
+  width: 800px;
+
+  &__form {
+    @include box;
+
+    margin-bottom: 20px;
+  }
+
+  &__result {
+    @include box;
+
+    margin-top: 20px;
+  }
+}

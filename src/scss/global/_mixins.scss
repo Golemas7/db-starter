@@ -1,0 +1,13 @@
+@mixin respond-to($size, $dir) {
+  @if ($size == retina) {
+    // stylelint-disable media-feature-name-no-vendor-prefix
+    @media only screen and (min-resolution: 2dppx),
+      (-webkit-min-device-pixel-ratio: 2) {
+      @content;
+    }
+  } @else if ($size and $dir) {
+    @media screen and (#{$dir}-width: ($size + px)) {
+      @content;
+    }
+  }
+}

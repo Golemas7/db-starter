@@ -1,0 +1,22 @@
+{
+  "arrowParens": "always",
+  "endOfLine": "auto",
+  "trailingComma": "es5",
+  "semi": true,
+  "singleQuote": false,
+  "printWidth": 80,
+  "overrides": [
+    {
+      "files": ["*.scss"],
+      "options": {
+        "singleQuote": true
+      }
+    },
+    {
+      "files": ["messages.js"],
+      "options": {
+        "printWidth": 1000
+      }
+    }
+  ]
+}

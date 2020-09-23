@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "react-app",
+    "prettier"
+  ],
+  "plugins": ["react", "jsx-a11y", "formatjs", "prettier"],
+  "rules": {
+    "no-console": "warn",
+    "react/display-name": "warn",
+    "jsx-a11y/no-onchange": "warn",
+    "formatjs/no-offset": "error",
+    "formatjs/enforce-default-message": "error",
+    "formatjs/enforce-placeholders": "error",
+    "formatjs/no-multiple-whitespaces": "warn",
+    "require-await": "error",
+    "prettier/prettier": "error"
+  }
+}
